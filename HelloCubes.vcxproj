@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="BuildMachineGeneric|Win32">
+      <Configuration>BuildMachineGeneric</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{18A530C6-FEB7-4E92-B8C3-24CFAD044004}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='BuildMachineGeneric|Win32'">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0000\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0000\include\interface\vcos\pthreads;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0000\include\interface;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0000\include\interface\vmcs_host\linux;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0005\include\c++\4.9;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0005\include\arm-linux-gnueabihf\c++\4.9;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0005\include\c++\4.9\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0004\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0003\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0005\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0005\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)HelloCubes-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.178.21\0000\include\c++\4.9;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.178.21\0000\include\arm-linux-gnueabihf\c++\4.9;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.178.21\0000\include\c++\4.9\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.178.21\0001\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.178.21\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.178.21\0002\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.178.21\0000\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.178.21\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)HelloCubes-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='BuildMachineGeneric|Win32'">
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeOutput>$(ProjectDir)HelloCubes-BuildMachineGeneric.vgdbsettings</NMakeOutput>
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0000\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0000\include\interface\vcos\pthreads;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0000\include\interface;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0000\include\interface\vmcs_host\linux;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0005\include\c++\4.9;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0005\include\arm-linux-gnueabihf\c++\4.9;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0005\include\c++\4.9\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0004\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0003\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0005\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.112.76\0005\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_BuildMachineGeneric.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_BuildMachineGeneric;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Headers\Input\OsomiKeys.h" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Source\API\stbi\load.cpp" />
+    <ClCompile Include="Source\API\stbi\write.cpp" />
+    <ClCompile Include="Source\API\tinyobjloader\tiny_obj_loader.cpp" />
+    <ClCompile Include="Source\Context\Context.cpp" />
+    <ClCompile Include="Source\Context\Game.cpp" />
+    <ClCompile Include="Source\Entity\Behavior.cpp" />
+    <ClCompile Include="Source\Helper\BinaryHelper.cpp" />
+    <ClCompile Include="Source\Helper\StringUtils.cpp" />
+    <ClCompile Include="Source\Input\InputHandler.cpp" />
+    <ClCompile Include="Source\MarchingCubes\MarchingCubes.cpp" />
+    <ClCompile Include="Source\MarchingCubes\ProceduralMesh.cpp" />
+    <ClCompile Include="Source\MarchingCubes\Render\ProceduralMeshPart.cpp" />
+    <ClCompile Include="Source\MarchingSquares\MarchingSquares.cpp" />
+    <ClCompile Include="Source\Math\mat4.cpp" />
+    <ClCompile Include="Source\Math\MathDefines.cpp" />
+    <ClCompile Include="Source\Math\vec2.cpp" />
+    <ClCompile Include="Source\Math\vec3.cpp" />
+    <ClCompile Include="Source\Math\vec4.cpp" />
+    <ClCompile Include="Source\Render\MD2Model.cpp" />
+    <ClCompile Include="Source\Render\Mesh.cpp" />
+    <ClCompile Include="Source\Render\Shader.cpp" />
+    <ClCompile Include="Source\Render\TexturedMesh.cpp" />
+    <ClCompile Include="Source\Resource\Resources.cpp" />
+    <ClCompile Include="Source\Resource\Texture.cpp" />
+    <ClCompile Include="Source\ShadowSurvival\GameState.cpp" />
+    <ClCompile Include="Source\Shapes\AABB.cpp" />
+    <ClCompile Include="Source\Shapes\Frustum.cpp" />
+    <ClCompile Include="Source\Shapes\Plane.cpp" />
+    <ClCompile Include="Source\Shapes\Ray.cpp" />
+    <ClCompile Include="Source\Shapes\Triangle.cpp" />
+    <ClCompile Include="Source\UI\Billboard.cpp" />
+    <ClCompile Include="Source\World\Camera.cpp" />
+    <ClCompile Include="Source\World\GameObject.cpp" />
+    <ClCompile Include="Source\World\Grid2D.cpp" />
+    <ClCompile Include="Source\World\Grid3D.cpp" />
+    <ClCompile Include="Source\World\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="buildmachinegeneric.mak" />
+    <None Include="debug.mak" />
+    <None Include="Makefile" />
+    <None Include="release.mak" />
+    <None Include="Resources\Models\Cube.oiRM" />
+    <None Include="Resources\Models\knight.md2" />
+    <None Include="Resources\Models\Plane.oiRM" />
+    <None Include="Resources\Models\Sphere.mtl" />
+    <None Include="Resources\Shaders\billboard.fsh" />
+    <None Include="Resources\Shaders\billboard.vsh" />
+    <None Include="Resources\Shaders\md2.fsh" />
+    <None Include="Resources\Shaders\md2.vsh" />
+    <None Include="Resources\Shaders\model.fsh" />
+    <None Include="Resources\Shaders\model.vsh" />
+    <None Include="Resources\Shaders\terrain.fsh" />
+    <None Include="Resources\Shaders\terrain.vsh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\API\stbi\load.h" />
+    <ClInclude Include="Headers\API\stbi\write.h" />
+    <ClInclude Include="Headers\API\tinyobjloader\tiny_obj_loader.h" />
+    <ClInclude Include="Headers\Context\Context.h" />
+    <ClInclude Include="Headers\Context\Game.h" />
+    <ClInclude Include="Headers\DataType\UnsignedInt.h" />
+    <ClInclude Include="Headers\Defines.h" />
+    <ClInclude Include="Headers\Entity\Behavior.h" />
+    <ClInclude Include="Headers\Entity\Behavior\PlayerBehavior.h" />
+    <ClInclude Include="Headers\Entity\Behavior\LivingBehavior.h" />
+    <ClInclude Include="Headers\Entity\Behavior\WalkingBehavior.h" />
+    <ClInclude Include="Headers\Helper\BinaryHelper.h" />
+    <ClInclude Include="Headers\Helper\StringUtils.h" />
+    <ClInclude Include="Headers\Input\InputHandler.h" />
+    <ClInclude Include="Headers\MarchingCubes\MarchingCubes.h" />
+    <ClInclude Include="Headers\MarchingCubes\ProceduralMesh.h" />
+    <ClInclude Include="Headers\MarchingCubes\ProceduralMeshFragment.h" />
+    <ClInclude Include="Headers\MarchingCubes\Render\ProceduralMeshPart.h" />
+    <ClInclude Include="Headers\MarchingSquares\MarchingSquares.h" />
+    <ClInclude Include="Headers\Math\mat4.h" />
+    <ClInclude Include="Headers\Math\MathDefines.h" />
+    <ClInclude Include="Headers\Math\Types.h" />
+    <ClInclude Include="Headers\Math\vec2.h" />
+    <ClInclude Include="Headers\Math\vec3.h" />
+    <ClInclude Include="Headers\Math\vec4.h" />
+    <ClInclude Include="Headers\Noise\SimplexNoise.h" />
+    <ClInclude Include="Headers\Render\AnimationState.h" />
+    <ClInclude Include="Headers\Render\Light.h" />
+    <ClInclude Include="Headers\Render\MD2Model.h" />
+    <ClInclude Include="Headers\Render\Mesh.h" />
+    <ClInclude Include="Headers\Render\RenderObject.h" />
+    <ClInclude Include="Headers\Render\Shader.h" />
+    <ClInclude Include="Headers\Render\TexturedMesh.h" />
+    <ClInclude Include="Headers\Resource\Resources.h" />
+    <ClInclude Include="Headers\Resource\Texture.h" />
+    <ClInclude Include="Headers\ShadowSurvival\AI\LivingEntitySS.h" />
+    <ClInclude Include="Headers\ShadowSurvival\Exp\Level.h" />
+    <ClInclude Include="Headers\ShadowSurvival\GameState.h" />
+    <ClInclude Include="Headers\Shapes\AABB.h" />
+    <ClInclude Include="Headers\Shapes\Frustum.h" />
+    <ClInclude Include="Headers\Shapes\Plane.h" />
+    <ClInclude Include="Headers\Shapes\Ray.h" />
+    <ClInclude Include="Headers\Shapes\Triangle.h" />
+    <ClInclude Include="Headers\State\State.h" />
+    <ClInclude Include="Headers\UI\Billboard.h" />
+    <ClInclude Include="Headers\World\C-word\CChunk.h" />
+    <ClInclude Include="Headers\World\Camera.h" />
+    <ClInclude Include="Headers\World\GameObject.h" />
+    <ClInclude Include="Headers\World\Grid2D.h" />
+    <ClInclude Include="Headers\World\Grid3D.h" />
+    <ClInclude Include="Headers\World\World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Textures\Bars.png" />
+    <Image Include="Resources\Textures\Dirt.png" />
+    <Image Include="Resources\Textures\knight.png" />
+    <Image Include="Resources\Textures\n_Dirt.png" />
+    <Image Include="Resources\Textures\n_Rock.png" />
+    <Image Include="Resources\Textures\n_Stone.png" />
+    <Image Include="Resources\Textures\Rock.png" />
+    <Image Include="Resources\Textures\Stone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="Resources\Models\Sphere.obj" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

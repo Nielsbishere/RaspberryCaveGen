@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{fb18a5f0-ed88-4a8e-a680-5404d9b1bc00}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{81565c2e-18b3-4aed-b7a7-bdd294323a7f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{d8b84598-24c1-48d6-8346-7a1b9abf88f7}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{17f4fdb7-9e96-413c-b078-fa4bdd9050b0}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="Header files\Math">
+      <UniqueIdentifier>{0af7df4b-00d8-44b2-9287-4dffea9d3055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Math">
+      <UniqueIdentifier>{b82e932b-9e24-4e28-bbdb-c9a0302237b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Main">
+      <UniqueIdentifier>{2f6db812-2c7e-4999-9a92-daa838c747f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Context">
+      <UniqueIdentifier>{c2841972-1187-41b7-acaa-c340e48bfddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Context">
+      <UniqueIdentifier>{42deda64-1d1e-4bb8-bcf9-3f2c5872ee16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Helper">
+      <UniqueIdentifier>{d6112821-8f84-419d-bb81-2e6d5b9a4835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Resource">
+      <UniqueIdentifier>{5d7a2c8c-9874-4564-8dc4-d3145e58b11b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Helper">
+      <UniqueIdentifier>{62bc7d03-1c8f-428e-b112-952707996b54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Noise">
+      <UniqueIdentifier>{809d0037-c20a-4a36-84b9-d66e382e0aa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Resource">
+      <UniqueIdentifier>{e54b9641-6c09-474f-9a6f-ae902493ed7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\API">
+      <UniqueIdentifier>{724b714f-a60a-4d42-8c1b-68a03c8a2318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\API\stbi">
+      <UniqueIdentifier>{77eb6215-c1b2-45b4-bb67-e85c18fb0f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\API">
+      <UniqueIdentifier>{91efbc11-c927-48d9-8e6c-4072cbb7c77f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\API\stbi">
+      <UniqueIdentifier>{aa7d47b9-fd95-4edb-8067-3463953101f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Render">
+      <UniqueIdentifier>{e3371e75-3af2-4e6d-bfe8-3c631de87f7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Render">
+      <UniqueIdentifier>{38a54585-f63f-42a8-8445-616f91dab278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource files\Shaders">
+      <UniqueIdentifier>{8a131a6c-9ef7-43b1-b5ba-00da3d119f81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource files\Models">
+      <UniqueIdentifier>{993fe45e-3592-43dd-9743-bd1fd2d08967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource files\Textures">
+      <UniqueIdentifier>{50860d8b-7c0a-4ce3-b9e3-34f3b1acf4f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\State">
+      <UniqueIdentifier>{2bd53641-5798-4ea1-8c85-edbd649950df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\ShadowSurvival">
+      <UniqueIdentifier>{dae1c97a-62a2-4e2a-a0db-c315b140fe61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\World">
+      <UniqueIdentifier>{4549f8d6-d65a-4739-9f11-09cfadcc1dcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Shapes">
+      <UniqueIdentifier>{c21e9f77-6deb-47ac-b1ff-3117bce8043e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Shapes">
+      <UniqueIdentifier>{46af466a-078c-41e0-8ace-0030e18cf59d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\World">
+      <UniqueIdentifier>{f22da3ee-6bcf-4cba-8199-4cdd9e7d0848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Input">
+      <UniqueIdentifier>{6d27cd29-6262-4c5a-8371-aa4a95828184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Input">
+      <UniqueIdentifier>{76811c1a-35b2-415a-97c2-5d41c4b726d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\API\tinyobjloader">
+      <UniqueIdentifier>{e3196cf2-da48-4667-a2c2-6cc9652e8ced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\API\tinyobjloader">
+      <UniqueIdentifier>{18c4d4e2-0dd3-43f2-b978-47540530bff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\MarchingCubes">
+      <UniqueIdentifier>{04011c53-1868-4603-884d-9929d8f5c96b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\MarchingCubes">
+      <UniqueIdentifier>{79f69f0a-2d81-4390-aaf7-e6db794c2264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\MarchingCubes\Render">
+      <UniqueIdentifier>{7adcaaa6-a12c-479e-899b-4e4e6bab8022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\MarchingCubes\Render">
+      <UniqueIdentifier>{7f6a9477-84f4-4c5d-8106-3bbbca851cbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\MarchingSquares">
+      <UniqueIdentifier>{10436394-d310-4190-a462-d663f9c4af4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\MarchingSquares">
+      <UniqueIdentifier>{4260194c-e0bf-435a-b8e9-7d5c856e7379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\DataType">
+      <UniqueIdentifier>{dfb19bfa-7219-4e33-a725-c65b7b18d24d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\World\C-word">
+      <UniqueIdentifier>{da566bf0-a718-4380-8b9f-d5d23febf310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\ShadowSurvival">
+      <UniqueIdentifier>{a5c2498d-3ec1-478f-bc6e-f9ce6c1e7729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\UI">
+      <UniqueIdentifier>{7ed93ed8-6690-4e30-9946-fe51907e401b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Entity">
+      <UniqueIdentifier>{61f37c62-7f89-4336-892d-d299d9d011bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Entity\Behavior">
+      <UniqueIdentifier>{1bccccb8-a2be-471b-93e7-04ef1ef66dec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\ShadowSurvival\AI">
+      <UniqueIdentifier>{e2be640d-6dfa-4e66-b83d-0cb5ac7e7069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Entity">
+      <UniqueIdentifier>{bfb923e9-acae-4166-8c89-768ccb08d6ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\ShadowSurvival\Exp">
+      <UniqueIdentifier>{33d9ba9b-fd80-42c2-853d-584e17e0f764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\UI">
+      <UniqueIdentifier>{5a61ae15-c531-4529-899c-c1140a584884}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Context\Context.cpp">
+      <Filter>Source files\Context</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Context\Game.cpp">
+      <Filter>Source files\Context</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Math\MathDefines.cpp">
+      <Filter>Source files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Math\mat4.cpp">
+      <Filter>Source files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Math\vec2.cpp">
+      <Filter>Source files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Math\vec3.cpp">
+      <Filter>Source files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Math\vec4.cpp">
+      <Filter>Source files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\Resources.cpp">
+      <Filter>Source files\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\Texture.cpp">
+      <Filter>Source files\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Helper\StringUtils.cpp">
+      <Filter>Source files\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\API\stbi\load.cpp">
+      <Filter>Source files\API\stbi</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\API\stbi\write.cpp">
+      <Filter>Source files\API\stbi</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Render\Mesh.cpp">
+      <Filter>Source files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Render\Shader.cpp">
+      <Filter>Source files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Helper\BinaryHelper.cpp">
+      <Filter>Source files\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Shapes\Frustum.cpp">
+      <Filter>Source files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Shapes\Ray.cpp">
+      <Filter>Source files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Shapes\Plane.cpp">
+      <Filter>Source files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Shapes\AABB.cpp">
+      <Filter>Source files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\World\Camera.cpp">
+      <Filter>Source files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\World\GameObject.cpp">
+      <Filter>Source files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Shapes\Triangle.cpp">
+      <Filter>Source files\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Input\InputHandler.cpp">
+      <Filter>Source files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers\Input\OsomiKeys.h">
+      <Filter>Header files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Render\MD2Model.cpp">
+      <Filter>Source files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\API\tinyobjloader\tiny_obj_loader.cpp">
+      <Filter>Source files\API\tinyobjloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Render\TexturedMesh.cpp">
+      <Filter>Source files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\World\Grid3D.cpp">
+      <Filter>Source files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MarchingCubes\MarchingCubes.cpp">
+      <Filter>Source files\MarchingCubes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MarchingCubes\Render\ProceduralMeshPart.cpp">
+      <Filter>Source files\MarchingCubes\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MarchingCubes\ProceduralMesh.cpp">
+      <Filter>Source files\MarchingCubes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\World\Grid2D.cpp">
+      <Filter>Source files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MarchingSquares\MarchingSquares.cpp">
+      <Filter>Source files\MarchingSquares</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ShadowSurvival\GameState.cpp">
+      <Filter>Source files\ShadowSurvival</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UI\Billboard.cpp">
+      <Filter>Source files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\World\World.cpp">
+      <Filter>Source files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity\Behavior.cpp">
+      <Filter>Source files\Entity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="Resources\Shaders\model.vsh">
+      <Filter>Resource files\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\model.fsh">
+      <Filter>Resource files\Shaders</Filter>
+    </None>
+    <None Include="Resources\Models\Cube.oiRM">
+      <Filter>Resource files\Models</Filter>
+    </None>
+    <None Include="buildmachinegeneric.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="Resources\Shaders\md2.vsh">
+      <Filter>Resource files\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\md2.fsh">
+      <Filter>Resource files\Shaders</Filter>
+    </None>
+    <None Include="Resources\Models\knight.md2">
+      <Filter>Resource files\Models</Filter>
+    </None>
+    <None Include="Resources\Models\Plane.oiRM">
+      <Filter>Resource files\Models</Filter>
+    </None>
+    <None Include="Resources\Shaders\terrain.fsh">
+      <Filter>Resource files\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\terrain.vsh">
+      <Filter>Resource files\Shaders</Filter>
+    </None>
+    <None Include="Resources\Models\Sphere.mtl">
+      <Filter>Resource files\Models</Filter>
+    </None>
+    <None Include="Resources\Shaders\billboard.fsh">
+      <Filter>Resource files\Shaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\billboard.vsh">
+      <Filter>Resource files\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\Math\mat4.h">
+      <Filter>Header files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Math\vec2.h">
+      <Filter>Header files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Math\vec3.h">
+      <Filter>Header files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Math\Types.h">
+      <Filter>Header files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Context\Context.h">
+      <Filter>Header files\Context</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Context\Game.h">
+      <Filter>Header files\Context</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Math\MathDefines.h">
+      <Filter>Header files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Helper\StringUtils.h">
+      <Filter>Header files\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Noise\SimplexNoise.h">
+      <Filter>Header files\Noise</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Resource\Texture.h">
+      <Filter>Header files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Resource\Resources.h">
+      <Filter>Header files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\API\stbi\load.h">
+      <Filter>Header files\API\stbi</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\API\stbi\write.h">
+      <Filter>Header files\API\stbi</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Helper\BinaryHelper.h">
+      <Filter>Header files\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Render\RenderObject.h">
+      <Filter>Header files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Render\Mesh.h">
+      <Filter>Header files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Render\Shader.h">
+      <Filter>Header files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Defines.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\State\State.h">
+      <Filter>Header files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\ShadowSurvival\GameState.h">
+      <Filter>Header files\ShadowSurvival</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\World\Camera.h">
+      <Filter>Header files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Shapes\Frustum.h">
+      <Filter>Header files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Shapes\Plane.h">
+      <Filter>Header files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Shapes\AABB.h">
+      <Filter>Header files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Shapes\Ray.h">
+      <Filter>Header files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\World\GameObject.h">
+      <Filter>Header files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Shapes\Triangle.h">
+      <Filter>Header files\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Input\InputHandler.h">
+      <Filter>Header files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Render\Light.h">
+      <Filter>Header files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Render\MD2Model.h">
+      <Filter>Header files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Render\AnimationState.h">
+      <Filter>Header files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\API\tinyobjloader\tiny_obj_loader.h">
+      <Filter>Header files\API\tinyobjloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Render\TexturedMesh.h">
+      <Filter>Header files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\World\Grid3D.h">
+      <Filter>Header files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\MarchingCubes\MarchingCubes.h">
+      <Filter>Header files\MarchingCubes</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\MarchingCubes\Render\ProceduralMeshPart.h">
+      <Filter>Header files\MarchingCubes\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\MarchingCubes\ProceduralMeshFragment.h">
+      <Filter>Header files\MarchingCubes</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\MarchingCubes\ProceduralMesh.h">
+      <Filter>Header files\MarchingCubes</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\MarchingSquares\MarchingSquares.h">
+      <Filter>Header files\MarchingSquares</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\World\Grid2D.h">
+      <Filter>Header files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\DataType\UnsignedInt.h">
+      <Filter>Header files\DataType</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\World\C-word\CChunk.h">
+      <Filter>Header files\World\C-word</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\UI\Billboard.h">
+      <Filter>Header files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\World\World.h">
+      <Filter>Header files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Entity\Behavior.h">
+      <Filter>Header files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Entity\Behavior\WalkingBehavior.h">
+      <Filter>Header files\Entity\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Entity\Behavior\LivingBehavior.h">
+      <Filter>Header files\Entity\Behavior</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Math\vec4.h">
+      <Filter>Header files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\ShadowSurvival\AI\LivingEntitySS.h">
+      <Filter>Header files\ShadowSurvival\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\ShadowSurvival\Exp\Level.h">
+      <Filter>Header files\ShadowSurvival\Exp</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Entity\Behavior\PlayerBehavior.h">
+      <Filter>Header files\Entity\Behavior</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Textures\Dirt.png">
+      <Filter>Resource files\Textures</Filter>
+    </Image>
+    <Image Include="Resources\Textures\n_Dirt.png">
+      <Filter>Resource files\Textures</Filter>
+    </Image>
+    <Image Include="Resources\Textures\n_Stone.png">
+      <Filter>Resource files\Textures</Filter>
+    </Image>
+    <Image Include="Resources\Textures\Stone.png">
+      <Filter>Resource files\Textures</Filter>
+    </Image>
+    <Image Include="Resources\Textures\knight.png">
+      <Filter>Resource files\Textures</Filter>
+    </Image>
+    <Image Include="Resources\Textures\Bars.png">
+      <Filter>Resource files\Textures</Filter>
+    </Image>
+    <Image Include="Resources\Textures\n_Rock.png">
+      <Filter>Resource files\Textures</Filter>
+    </Image>
+    <Image Include="Resources\Textures\Rock.png">
+      <Filter>Resource files\Textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="Resources\Models\Sphere.obj">
+      <Filter>Resource files\Models</Filter>
+    </Object>
+  </ItemGroup>
+</Project>
